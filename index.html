@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Générateur de citations</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- jQuery + Bootstrap + Font Awesome -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+    <!-- Pour style.css amelioration du design -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <!-- _________________________________ -->
+
+    <!-- referencement du fichier style.css et du main.js -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+
+
+<body>
+
+    <header class="header-area overlay">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Projet 5</a>
+
+                <nav>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Etape1</a></li>
+                        <li class="nav-item"><a class="nav-link " href="#">Etape2</a></li>
+                    </ul>
+                </nav>
+
+
+
+            </div>
+        </nav>
+
+        <div class="banner">
+            <div class="container">
+                <h1>Contenu du projet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec elit ex. Etiam elementum lectus et tempor molestie.</p>
+                <a href="#content" class="button button-primary">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section id="content" class="content">
+            <h1>ETAPE 1</h1>
+
+            <div class="container text-center">
+                <h1>Générateur de citation</h1>
+                <blockquote>
+                    <p class="citation"></p>
+                    <footer class="auteur">
+                        Auteur
+                    </footer>
+                </blockquote>
+
+
+                <button id="generer" class="btn btn-large btn-primary">Générer</button>
+
+            </div>
+
+
+
+
+        </section>
+
+
+        <section id="etape2" class="2etape">
+            <h1>ETAPE 2</h1>
+
+            <div class="container text-center">
+
+
+                <div id="divchoix">
+                    <h1>veuillez choisir entre les deux generateurs de citations</h1>
+                    <label for="name">choix (1 et 2 ):</label>
+                    <input type="number" id="choix" min="1" max="2">
+                    <button type="submit" class="choisir">choisir</button>
+                    <br> <br>
+                </div>
+
+
+                <div id="divnombre" style="display:none;">
+
+                    <h1>veuillez entrer le nombre de citations que vous voulez afficher</h1>
+
+                    <label for="name">entrer un nombre (1 et 5 ):</label>
+                    <input type="number" id="nombre" min="1" max="5">
+                    <button  class="btnnombre">envoyer</button>
+                    <br> <br>
+                </div>
+
+
+
+                <div id="divquit" style="display:none;">
+
+                    <h1>cliquez sur generer pour generer d'autres citation ou sur quittez pour quitter</h1>
+                    <button onclick="javascript:self.close();">Quitter</button>  <!-- fermer la page -->
+                    <button onclick="location.reload()">Nouvelle citation</button> <br> <br>      <!-- Rafraichir la page -->
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
